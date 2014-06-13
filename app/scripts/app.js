@@ -18,7 +18,7 @@ angular
     'ngTouch',
     'angularTreeview',
     'ngGrid'
-  ])
+    ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -28,6 +28,10 @@ angular
       .when('/ng-grid', {
         templateUrl: 'views/ng-grid.html',
         controller: 'ngGridCtrl'
+      })
+      .when('/questionaire', {
+        templateUrl: 'views/questionaire.html',
+        controller: 'questionCtrl'
       })
       .otherwise({
         redirectTo: '/'

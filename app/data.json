@@ -1,0 +1,20 @@
+{
+    "question": "Which NBA team do you prefer?",
+    "option": [
+        {
+            "content": "New York Knicks",
+            "next": [
+                "question":,
+                "answer":
+            ]
+            },
+        {
+            "content": "Los Angeles Lakers",
+            "next": []
+            },
+        {
+            "Content": "Miami Heat",
+            "next": []
+        }
+    ]
+}
