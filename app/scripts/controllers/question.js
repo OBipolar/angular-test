@@ -8,16 +8,16 @@
 */
 angular.module('testApp')
     .controller('questionCtrl', function($scope, $http) {
-
+            $scope.NOW = {};
             $http.get('data.json').success(function(data) {
                 $scope.db = data;
                 $scope.db_original = data;
              });
 
             $scope.next = function (data) {
-                $scope.db = data.next;
-                $scope.currentContent = data.content;
-                $scope.answer = data.answer;
+                $scope.db = eval("(" + data + ")").next;
+                $scope.NOW.currentContent = eval("(" + data + ")").content;
+                $scope.answer = eval("(" + data + ")").answer;
             }
 
             $scope.reset = function () {

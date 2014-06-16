@@ -7,5 +7,8 @@
 * Angular Grid Chart
 * Question-Option-Answer System (Lack of Prev) - Jun 16
 
-### Todo
+### ToDo
 * Live Preview of PDF\DOC\IMAGE
+
+### ToLearn
+* Usage of console log
