@@ -33,6 +33,10 @@ angular
         templateUrl: 'views/questionaire.html',
         controller: 'questionCtrl'
       })
+      .when('/preview', {
+        templateUrl: 'views/preview.html',
+        controller: 'previewCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

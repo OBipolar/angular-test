@@ -5,7 +5,7 @@
 ### Current Function Samples
 * Angular Treeview
 * Angular Grid Chart
+* Question-Option-Answer System (Lack of Prev) - Jun 16
 
 ### Todo
-* Question-Option-Answer System (data from JSON)
 * Live Preview of PDF\DOC\IMAGE

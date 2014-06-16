@@ -1,20 +1,45 @@
 {
-    "question": "Which NBA team do you prefer?",
-    "option": [
+    "question": "Q1",
+    "options": [
         {
-            "content": "New York Knicks",
-            "next": [
-                "question":,
-                "answer":
-            ]
+            "content": "O1_1",
+            "next": {
+                "question": "Q11",
+                "options": [
+                    {
+                        "content": "O11_1",
+                        "next": {
+                            "question": "Q111",
+                            "options": [
+                                {
+                                    "content": "O111_1",
+                                    "answer": "111_1"
+                                    },
+                                {
+                                    "content": "O111_2",
+                                    "answer": "111_2"
+                                    },
+                                {
+                                    "content": "O111_3",
+                                    "answer": "111_3"
+                                }
+                            ]
+                        }
+                        },
+                    {
+                        "content": "O11_2",
+                        "answer": "You touch the answer 11_2"
+                    }
+                ]
+            }
             },
         {
-            "content": "Los Angeles Lakers",
-            "next": []
+            "content": "O1_2",
+            "answer": "You touch the answer 1_2"
             },
         {
-            "Content": "Miami Heat",
-            "next": []
+            "content": "O1_3",
+            "answer": "You touch the answer 1_3"
         }
     ]
 }

@@ -2,21 +2,27 @@
     <h1>Sample QOA</h1>
 </div>
 
-<div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-addon">
-        <input type="checkbox">
-      </span>
-      <input type="text" class="form-control">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-addon">
-        <input type="radio">
-      </span>
-      <input type="text" class="form-control">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+<div ng-app="testApp">
+    <div ng-controller="questionCtrl">
+
+        <div class="question">
+            {{db.question}}
+                <li ng-repeat="option in db.options">
+                    <span class="inner">
+                        <input type="radio" ng-model="$parent.currentOption" value="{{option}}"/>{{option.content}}<br/>
+                    </span>
+                </li>
+            Current_Option = {{currentOption}}<br>
+            Option_Content = {{currentContent}}
+
+            <div class="answer" ng-if="!db">
+                Answer: {{answer}}
+            </div>
+
+            <br>
+            <button ng-click="next(currentOption)">Next</button>
+            <button ng-click="reset()">Reset</button>
+        </div>
+
+    </div>
+</div>
