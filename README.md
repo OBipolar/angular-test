@@ -12,4 +12,13 @@
 * Live Preview of Doc\Xls
 
 ### ToLearn
-* Usage of console log
+* Usage of cons ole log
+
+### Requirements
+* Angular.js
+* Grunt
+* Karma
+* ngTreeview
+* ngGrid
+* ngPDFViewer
+* PDF.js
