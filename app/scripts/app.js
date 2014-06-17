@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'angularTreeview',
-    'ngGrid'
+    'ngGrid',
+    'ngPDFViewer'
     ])
   .config(function ($routeProvider) {
     $routeProvider

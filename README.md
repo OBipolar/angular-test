@@ -6,9 +6,10 @@
 * Angular Treeview
 * Angular Grid Chart
 * Question-Option-Answer System (Lack of Prev) - Jun 16
+* Live Preview of PDF - Jun 17
 
 ### ToDo
-* Live Preview of PDF\DOC\IMAGE
+* Live Preview of Doc\Xls
 
 ### ToLearn
 * Usage of console log
