@@ -9,7 +9,7 @@
 * Live Preview of PDF - Jun 17
 
 ### ToDo
-* Live Preview of Word/Excel
+* Live Preview of PDF(selection, goto function, scroll, full screen etc...)
 * User Authentication (further, need PHP/Server)
 * Loading Page between switching partial views
 
