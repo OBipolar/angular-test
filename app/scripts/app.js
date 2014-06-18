@@ -18,7 +18,8 @@ angular
     'ngTouch',
     'angularTreeview',
     'ngGrid',
-    'ngPDFViewer'
+    'ngPDFViewer',
+    'pdf'
     ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -34,9 +35,13 @@ angular
         templateUrl: 'views/questionaire.html',
         controller: 'questionCtrl'
       })
-      .when('/preview', {
+      .when('/preview1', {
         templateUrl: 'views/preview.html',
         controller: 'previewCtrl'
+      })
+      .when('/preview2', {
+        templateUrl: 'views/preview2.html',
+        controller: 'authCtrl'
       })
       .otherwise({
         redirectTo: '/'

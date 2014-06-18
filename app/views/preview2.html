@@ -1,0 +1,11 @@
+<div class="jumbotron">
+    <h1>Documents Preview</h1>
+    <h3>using angular-pdf</h3>
+</div>
+
+<div ng-app="testApp">
+    <div class="wrapper" ng-controller="preview2Ctrl">
+        <h1>{{pdfName}}</h1>
+        <ng-pdf template-url="/views/viewer.html" canvasid="pdf" scale="1"></ng-pdf>
+    </div>
+</div>

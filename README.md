@@ -9,10 +9,13 @@
 * Live Preview of PDF - Jun 17
 
 ### ToDo
-* User Authentication
+* Live Preview of Word/Excel
+* User Authentication (further, need PHP/Server)
+* Loading Page between switching partial views
 
 ### ToLearn
 * Usage of console log
+* PHP
 
 ### Requirements
 * Angular.js
