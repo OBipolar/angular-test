@@ -9,10 +9,10 @@
 * Live Preview of PDF - Jun 17
 
 ### ToDo
-* Live Preview of Doc\Xls
+* User Authentication
 
 ### ToLearn
-* Usage of cons ole log
+* Usage of console log
 
 ### Requirements
 * Angular.js
