@@ -6,6 +6,6 @@
 * Description
 */
 angular.module('testApp')
-    .controller('loadCtrl', function($scope, $http, $timeout, promiseTracker) {
-        $scope.loadingTracker = promiseTracker();
+    .controller('loadCtrl', function($rootScope, $http, $timeout, promiseTracker) {
+        $rootScope.loadingTracker = promiseTracker();
     });

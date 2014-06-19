@@ -8,7 +8,7 @@
 * Question-Option-Answer System (Lack of Prev) - Jun 16
 * Live Preview of PDF - Jun 17
 * Loading Page between switching partial views - Jun 19
-    1. ng-cloak(simply add to <any ng-cloak> or <any class="ng-cloak">function of display none)
+    1. ng-cloak(simply add \<any ng-cloak\> or \<any class="ng-cloak"\>function of display none)
     2. angular-promise-tracker(available on github)
 
 ### ToDo
