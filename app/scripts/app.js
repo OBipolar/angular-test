@@ -18,7 +18,8 @@ var app = angular.module('testApp', [
               'angularTreeview',
               'ngGrid',
               'ngPDFViewer',
-              'pdf'
+              'pdf',
+              'ajoslin.promise-tracker'
             ]);
 
 app.config(function ($routeProvider) {
@@ -54,7 +55,7 @@ app.run(['$rootScope', '$location', function($rootScope, $location){
       console.log('from: ' + fromUrl + ', to: ' + toUrl);
     });
 
-    $rootScope.$on('$locationChangeSuccess', function() {
+    $rootScope.$on('$locationChangeSuccess', function(locationScope, toUrl, fromUrl) {
       console.log('locationChangeSuccess');
     });
 
@@ -63,11 +64,11 @@ app.run(['$rootScope', '$location', function($rootScope, $location){
       console.log('from: ' + fromRoute + ', to: ' + toRoute);
     });
 
-    $rootScope.$on('$routeChangeSuccess', function() {
+    $rootScope.$on('$routeChangeSuccess', function(rootScope, toRoute, fromRoute) {
       console.log('routeChangeSuccess');
     });
 
     $rootScope.$on('$viewContentLoaded', function() {
       console.log('viewContentLoaded');
-    })
+    });
   }]);

@@ -7,11 +7,14 @@
 * Angular Grid Chart
 * Question-Option-Answer System (Lack of Prev) - Jun 16
 * Live Preview of PDF - Jun 17
+* Loading Page between switching partial views - Jun 19
+    1. ng-cloak(simply add to <any ng-cloak> or <any class="ng-cloak">function of display none)
+    2. angular-promise-tracker(available on github)
 
 ### ToDo
 * Live Preview of PDF(selection, goto function, scroll, full screen etc...)
 * User Authentication (further, need PHP/Server)
-* Loading Page between switching partial views(route change, route change success)
+
 
 ### ToLearn
 * Usage of console log
@@ -25,3 +28,4 @@
 * ngGrid
 * ngPDFViewer
 * PDF.js
+* angular-promise-tracker

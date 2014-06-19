@@ -35,6 +35,12 @@
         <h3 class="text-muted">test</h3>
       </div>
 
+      <div ng-controller="loadCtrl">
+        <div ng-show="loadingTracker.active()">
+          Loading...Please Wait
+        </div>
+      </div>
+
       <div ng-view=""></div>
 
       <div class="footer">
@@ -72,6 +78,8 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/ngstorage/ngStorage.js"></script>
     <script src="bower_components/oauth-ng/dist/oauth-ng.js"></script>
+    <script src="bower_components/angular-promise-tracker/promise-tracker.js"></script>
+    <script src="bower_components/angular-promise-tracker/promise-tracker-http-interceptor.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -83,6 +91,7 @@
         <script src="scripts/controllers/preview.js"></script>
         <script src="scripts/controllers/preview2.js"></script>
         <script src="scripts/controllers/auth.js"></script>
+        <script src="scripts/controllers/load.js"></script>
         <script src="scripts/angular.treeview.js"></script>
         <script src="scripts/ng-grid-2.0.11.min.js"></script>
         <script src="scripts/ng-pdfviewer.js"></script>
