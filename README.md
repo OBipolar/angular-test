@@ -14,6 +14,7 @@
 ### ToDo
 * Live Preview of PDF(selection, goto function, scroll, full screen etc...)
 * User Authentication (further, need PHP/Server)
+* ngAnimate (CSS3 effect when switching views in a SPA)
 
 
 ### ToLearn
