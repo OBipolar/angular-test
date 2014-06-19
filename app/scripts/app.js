@@ -8,20 +8,20 @@
  *
  * Main module of the application.
  */
-angular
-  .module('testApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch',
-    'angularTreeview',
-    'ngGrid',
-    'ngPDFViewer',
-    'pdf'
-    ])
-  .config(function ($routeProvider) {
+var app = angular.module('testApp', [
+              'ngAnimate',
+              'ngCookies',
+              'ngResource',
+              'ngRoute',
+              'ngSanitize',
+              'ngTouch',
+              'angularTreeview',
+              'ngGrid',
+              'ngPDFViewer',
+              'pdf'
+            ]);
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -47,3 +47,27 @@ angular
         redirectTo: '/'
       });
   });
+
+app.run(['$rootScope', '$location', function($rootScope, $location){
+    $rootScope.$on('$locationChangeStart', function(locationScope, toUrl, fromUrl) {
+      console.log('locationChangeStart');
+      console.log('from: ' + fromUrl + ', to: ' + toUrl);
+    });
+
+    $rootScope.$on('$locationChangeSuccess', function() {
+      console.log('locationChangeSuccess');
+    });
+
+    $rootScope.$on('$routeChangeStart', function(rootScope, toRoute, fromRoute) {
+      console.log('routeChangeStart');
+      console.log('from: ' + fromRoute + ', to: ' + toRoute);
+    });
+
+    $rootScope.$on('$routeChangeSuccess', function() {
+      console.log('routeChangeSuccess');
+    });
+
+    $rootScope.$on('$viewContentLoaded', function() {
+      console.log('viewContentLoaded');
+    })
+  }]);

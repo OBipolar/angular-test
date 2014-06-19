@@ -11,7 +11,7 @@
 ### ToDo
 * Live Preview of PDF(selection, goto function, scroll, full screen etc...)
 * User Authentication (further, need PHP/Server)
-* Loading Page between switching partial views
+* Loading Page between switching partial views(route change, route change success)
 
 ### ToLearn
 * Usage of console log

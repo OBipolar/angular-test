@@ -5,7 +5,3 @@
 *
 * Description
 */
-angular.module('testApp',)
-
-
-    });
