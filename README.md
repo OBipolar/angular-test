@@ -17,6 +17,8 @@
 ### ToDo
 * Live Preview of PDF(selection, goto function, scroll, full screen etc...)
 * User Authentication (further, need PHP/Server)
+* http://scotch.io/tutorials/javascript/angularjs-multi-step-form-using-ui-router
+* add tips to the QOA system
 
 ### ToLearn
 * PHP
