@@ -35,11 +35,7 @@
         <h3 class="text-muted">test</h3>
       </div>
 
-      <div ng-controller="loadCtrl">
-        <div ng-show="loadingTracker.active()">
-          <h1>Loading...Please Wait</h1>
-        </div>
-      </div>
+      <div loadbar>Loading...Please Wait</div>
 
       <div ng-view=""></div>
 
@@ -78,10 +74,10 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/ngstorage/ngStorage.js"></script>
     <script src="bower_components/oauth-ng/dist/oauth-ng.js"></script>
-    <script src="bower_components/angular-promise-tracker/promise-tracker.js"></script>
-    <script src="bower_components/angular-promise-tracker/promise-tracker-http-interceptor.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+   <script src="scripts/directives/directives.js"></script>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>

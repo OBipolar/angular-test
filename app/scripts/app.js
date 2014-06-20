@@ -19,7 +19,7 @@ var app = angular.module('testApp', [
               'ngGrid',
               'ngPDFViewer',
               'pdf',
-              'ajoslin.promise-tracker'
+              'testApp.directives'
             ]);
 
 app.config(function ($routeProvider) {
@@ -42,7 +42,7 @@ app.config(function ($routeProvider) {
       })
       .when('/preview2', {
         templateUrl: 'views/preview2.html',
-        controller: 'authCtrl'
+        controller: ''
       })
       .otherwise({
         redirectTo: '/'
