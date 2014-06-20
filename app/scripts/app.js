@@ -44,6 +44,10 @@ app.config(function ($routeProvider) {
         templateUrl: 'views/preview2.html',
         controller: ''
       })
+      .when('/ngAnimate', {
+        templateUrl: 'views/ngAnimate.html',
+        controller: 'animateCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -10,16 +10,15 @@
 * Loading Page between switching partial views - Jun 19
     1. ng-cloak(simply add \<any ng-cloak\> or \<any class="ng-cloak"\>function of display none)
     2. angular-promise-tracker(available on github)
-    3. Manually Add\Remove(watch routeChangeStart and Success)
+    3. Manually Add\Remove(watch routeChangeStart and routeChangeSuccess)
+* ngAnimate
+
 
 ### ToDo
 * Live Preview of PDF(selection, goto function, scroll, full screen etc...)
 * User Authentication (further, need PHP/Server)
-* ngAnimate (CSS3 effect when switching views in a SPA)
-* Loading page: how to define a promise/request
 
 ### ToLearn
-* Usage of console log
 * PHP
 
 ### Requirements

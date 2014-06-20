@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/angular.treeview.css">
     <link rel="stylesheet" href="styles/ng-grid.css">
+    <link rel="stylesheet" href="styles/ng-animation.css">
     <!-- endbuild -->
   </head>
   <body ng-app="testApp">
@@ -31,11 +32,14 @@
           <li><a ng-href="#/questionaire">questionaire</a></li>
           <li><a ng-href="#/preview1">preview_v1</a></li>
           <li><a ng-href="#/preview2">preview_v2</a></li>
+          <li><a ng-href="#/ngAnimate">ngAnimate</a></li>
         </ul>
         <h3 class="text-muted">test</h3>
       </div>
 
-      <div loadbar>Loading...Please Wait</div>
+      <div loadbar>
+        <h1>Loading...Please Wait</h1>
+      </div>
 
       <div ng-view=""></div>
 
@@ -88,6 +92,7 @@
         <script src="scripts/controllers/preview2.js"></script>
         <script src="scripts/controllers/auth.js"></script>
         <script src="scripts/controllers/load.js"></script>
+        <script src="scripts/controllers/animate.js"></script>
         <script src="scripts/angular.treeview.js"></script>
         <script src="scripts/ng-grid-2.0.11.min.js"></script>
         <script src="scripts/ng-pdfviewer.js"></script>
