@@ -19,7 +19,8 @@ var app = angular.module('testApp', [
               'ngGrid',
               'ngPDFViewer',
               'pdf',
-              'testApp.directives'
+              'testApp.directives',
+              'nvd3ChartDirectives'
             ]);
 
 app.config(function ($routeProvider) {
@@ -47,6 +48,10 @@ app.config(function ($routeProvider) {
       .when('/ngAnimate', {
         templateUrl: 'views/ngAnimate.html',
         controller: 'animateCtrl'
+      })
+      .when('/d3charts', {
+        templateUrl: 'views/d3charts.html',
+        controller: 'd3Ctrl'
       })
       .otherwise({
         redirectTo: '/'
