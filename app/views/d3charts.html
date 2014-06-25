@@ -4,12 +4,26 @@
 
 <div ng-app="testApp">
     <div ng-controller="d3Ctrl">
+
+            <h4>Line Charts</h4>
             <nvd3-line-chart
-        data="exampleData"
-        showXAxis="true"
-        showYAxis="true"
-        tooltips="true"
-        interactive="true">
-    </nvd3-line-chart>
+                data="exampleData"
+                showXAxis="true"
+                showYAxis="true"
+                tooltips="true"
+                interactive="true">
+            </nvd3-line-chart>
+
+            <h4>Stacked Area Charts</h4>
+            <nvd3-stacked-area-chart
+                data="exampleData"
+                id="exampleId"
+                showXAxis="true"
+                showYAxis="true"
+                width="800"
+                height="350">
+                <svg></svg>
+            </nvd3-stacked-area-chart>
+
     </div>
 </div>

@@ -31,3 +31,6 @@
 * ngPDFViewer
 * PDF.js
 * angular-promise-tracker
+* d3.js
+* nvd3.js
+* Angularjs-nvd3-Directives.js
