@@ -12,13 +12,12 @@
     2. angular-promise-tracker(available on github)
     3. Manually Add\Remove(watch routeChangeStart and routeChangeSuccess)
 * ngAnimate
-
+* multi-step form using ui-router, see https://github.com/OBipolar/angular-multiStepForm
 
 ### ToDo
 * Live Preview of PDF(selection, goto function, scroll, full screen etc...)
 * User Authentication (further, need PHP/Server)
-* http://scotch.io/tutorials/javascript/angularjs-multi-step-form-using-ui-router
-* add tips to the QOA system
+* angular-nvd3 charts
 
 ### ToLearn
 * PHP
