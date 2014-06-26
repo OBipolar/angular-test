@@ -15,6 +15,7 @@
                     tooltips="true"
                     xAxisTickFormat="xAxisTickFormatFunction()"
                     interactive="true">
+                    <svg></svg>
                 </nvd3-line-chart>
             </div>
 
@@ -39,6 +40,7 @@
                     height="350"
                     showXAxis="false"
                     showYAxis="true">
+                    <svg></svg>
                 </nvd3-multi-bar-chart>
             </div>
 
@@ -49,7 +51,24 @@
                         id="scatter-chart"
                         height="400"
                         yAxisTickFormat="yAxisTickFormatFunction()">
+                    <svg></svg>
                     </nvd3-scatter-chart>
+            </div>
+
+            <div class="pie-chart">
+                <h4>Pie Charts</h4>
+                <nvd3-pie-chart
+                    data="pieChartData"
+                    id="pie-chart"
+                    height="500"
+                    x="xFunction()"
+                    y="yFunction()"
+                    showLabels="true"
+                    tooltips="true"
+                    donut="true"
+                    noData="Data aint here">
+                    <svg></svg>
+                </nvd3-pie-chart>
             </div>
     </div>
 </div>
