@@ -5,25 +5,50 @@
 <div ng-app="testApp">
     <div ng-controller="d3Ctrl">
 
-            <h4>Line Charts</h4>
-            <nvd3-line-chart
-                data="exampleData"
-                showXAxis="true"
-                showYAxis="true"
-                tooltips="true"
-                interactive="true">
-            </nvd3-line-chart>
+            <div class="line-chart">
+                <h4>Line Charts</h4>
+                <nvd3-line-chart
+                    data="lineChartData"
+                    id="line-chart"
+                    showXAxis="false"
+                    showYAxis="true"
+                    tooltips="true"
+                    interactive="true">
+                </nvd3-line-chart>
+            </div>
 
-            <h4>Stacked Area Charts</h4>
-            <nvd3-stacked-area-chart
-                data="exampleData"
-                id="exampleId"
-                showXAxis="true"
-                showYAxis="true"
-                width="800"
-                height="350">
-                <svg></svg>
-            </nvd3-stacked-area-chart>
+            <div class="stacked-area-chart">
+                <h4>Stacked Area Charts</h4>
+                <nvd3-stacked-area-chart
+                    data="stackChartData"
+                    id="stacked-area-chart"
+                    showXAxis="true"
+                    showYAxis="true"
+                    height="350">
+                    <svg></svg>
+                </nvd3-stacked-area-chart>
+            </div>
 
+            <div class="multi-bar-chart">
+                <h4>Multi Bar Charts</h4>
+                <nvd3-multi-bar-chart
+                    data="stackChartData"
+                    id="multi-bar-chart"
+                    height="350"
+                    showXAxis="false"
+                    showYAxis="true">
+                </nvd3-multi-bar-chart>
+            </div>
+
+            <div class="scatter-chart">
+                <h4>Scatter Charts</h4>
+                    <nvd3-scatter-chart
+                        data="scatterChartData"
+                        id="scatter-chart"
+                        height="400"
+                        yAxisTickFormat="yAxisTickFormatFunction()"
+                        xAxisTickFormat="xAxisTickFormatFunction()">
+                    </nvd3-scatter-chart>
+            </div>
     </div>
 </div>
