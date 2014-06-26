@@ -10,9 +10,10 @@
                 <nvd3-line-chart
                     data="lineChartData"
                     id="line-chart"
-                    showXAxis="false"
+                    showXAxis="true"
                     showYAxis="true"
                     tooltips="true"
+                    xAxisTickFormat="xAxisTickFormatFunction()"
                     interactive="true">
                 </nvd3-line-chart>
             </div>
@@ -24,6 +25,7 @@
                     id="stacked-area-chart"
                     showXAxis="true"
                     showYAxis="true"
+                    xAxisTickFormat="xAxisTickFormatFunction()"
                     height="350">
                     <svg></svg>
                 </nvd3-stacked-area-chart>
@@ -46,8 +48,7 @@
                         data="scatterChartData"
                         id="scatter-chart"
                         height="400"
-                        yAxisTickFormat="yAxisTickFormatFunction()"
-                        xAxisTickFormat="xAxisTickFormatFunction()">
+                        yAxisTickFormat="yAxisTickFormatFunction()">
                     </nvd3-scatter-chart>
             </div>
     </div>

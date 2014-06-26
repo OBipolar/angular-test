@@ -19,4 +19,10 @@ angular.module('testApp')
         $http.get('resources/scatterChartData.json').success(function(data) {
           $scope.scatterChartData = data ;
         });
+
+        $scope.xAxisTickFormatFunction = function() {
+          return function(d) {
+            return d3.time.format('%x')(new Date(d));
+          }
+        };
       });
