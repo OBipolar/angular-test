@@ -11,6 +11,7 @@
     1. ng-cloak(simply add \<any ng-cloak\> or \<any class="ng-cloak"\>function of display none)
     2. angular-promise-tracker(available on github)
     3. Manually Add\Remove(watch routeChangeStart and routeChangeSuccess)
+    4. Check the directives.js under the app\scripts for the auto-hidden loadbar
 * ngAnimate
 * multi-step form using ui-router, see https://github.com/OBipolar/angular-multiStepForm
 * angular-nvd3 charts (with unix timestamp conversion)
