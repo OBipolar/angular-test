@@ -28,16 +28,12 @@ angular.module('testApp')
           return function(d) {
         return d.key;
         };
-        }
+        };
 
         $scope.yFunction = function() {
           return function(d) {
         return d.y;
         };
-        }
-
-      console.log($scope.pieChartData);
-
-
         };
-      });
+
+});

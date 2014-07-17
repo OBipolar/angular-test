@@ -4,14 +4,35 @@
 
 <div ng-app="testApp">
     <div ng-controller="MainCtrl">
-        <div
-            data-angular-treeview="true"
-            data-tree-id="abc"
-            data-tree-model="treedata"
-            data-node-id="id"
-            data-node-label="label"
-            data-node-children="children" >
+        <div class="row">
+
+        <div class="well">
+            <h3>Static Sample</h3>
+            <div
+                data-angular-treeview="true"
+                data-tree-id="abc"
+                data-tree-model="treedata"
+                data-node-id="id"
+                data-node-label="label"
+                data-node-children="children" >
+            </div>
         </div>
+
+        <div class="well">
+            <h3>Dynamic Recursive Sample</h3>
+                <ul>
+                    <li ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></li>
+                </ul>
+        </div>
+    </div>
     </div>
 </div>
 
+<script type="text/ng-template"  id="tree_item_renderer.html">
+    {{data.name}}
+    <button ng-click="add(data)">Add node</button>
+    <button ng-click="delete(data)" ng-show="data.nodes.length > 0">Delete nodes</button>
+    <ul>
+        <li ng-repeat="data in data.nodes" ng-include="'tree_item_renderer.html'"></li>
+    </ul>
+</script>
