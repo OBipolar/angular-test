@@ -36,9 +36,9 @@ angular.module('testApp')
     };
     $scope.add = function(data) {
         var post = data.nodes.length + 1;
-        var newName = data.name + '-' + post;
-        data.nodes.push({name: newName,nodes: []});
+        var newQuestion = data.question + '-' + post;
+        data.nodes.push({question: newQuestion,nodes: []});
     };
-    $scope.tree = [{name: "Node", nodes: []}];
+    $scope.tree = [{question: 'Question1', tip: 'Tip1', nodes: []}];
 
     });
