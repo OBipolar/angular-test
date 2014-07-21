@@ -31,18 +31,21 @@ angular.module('testApp')
             {"label": "Guest", "id": "role3", "children": []}
         ];
 
-    $scope.currentNode = {};
+    $scope.currentOption = {};
 
-  $scope.delete = function(data) {
-        data.nodes = [];
+    $scope.delete = function(data) {
+        data.options = [];
     };
+
     $scope.add = function(data) {
-        var post = data.nodes.length + 1;
+        var post = data.options.length + 1;
         var newQuestion = data.question + '-' + post;
-        data.question = $scope.currentNode.question;
-        data.tip = $scope.currentNode.tip;
-        data.nodes.push({question: '', tip: '', nodes: []});
+        data.content = this.content;
+        data.question = this.question;
+        data.tip = this.tip;
+        data.options.push({content:'',question: '', tip: '', options: []});
     };
-    $scope.tree = [{question: '', tip: '', nodes: []}];
+
+    $scope.tree = [{question: '', tip: '', options: []}];
 
     });

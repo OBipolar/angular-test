@@ -36,26 +36,25 @@
 
     <div class="input-group">
         <span class="input-group-addon">Content</span>
-        <input type="text" class="form-control" ng-model="currentNode.content">
+        <input type="text" class="form-control" ng-model="content">
     </div>
     <br>
     <div class="input-group">
         <span class="input-group-addon">Question</span>
-        <input type="text" class="form-control" ng-model="currentNode.question">
+        <input type="text" class="form-control" ng-model="question">
     </div>
     <br>
     <div class="input-group">
         <span class="input-group-addon">Tip</span>
-        <input type="text" class="form-control" ng-model="currentNode.tip">
+        <input type="text" class="form-control" ng-model="tip">
     </div>
     <br>
 
     <button ng-click="add(data)">Add Option</button>
-    <button ng-click="delete(data)" ng-show="data.nodes.length > 0">Delete Options</button>
-
+    <button ng-click="delete(data)" ng-show="data.options.length > 0">Delete Options</button>
 
     <ul>
-        <li ng-repeat="data in data.nodes" ng-include="'tree_item_renderer.html'"></li>
+        <li ng-repeat="data in data.options" ng-include="'tree_item_renderer.html'"></li>
     </ul>
 </div>
 </script>
