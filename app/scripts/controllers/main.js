@@ -37,13 +37,21 @@ angular.module('testApp')
         data.options = [];
     };
 
-    $scope.add = function(data) {
-        var post = data.options.length + 1;
-        var newQuestion = data.question + '-' + post;
+    $scope.save = function(data) {
         data.content = this.content;
         data.question = this.question;
         data.tip = this.tip;
-        data.options.push({content:'',question: '', tip: '', options: []});
+    };
+    $scope.add = function(data) {
+
+        data.options.push({content:'',question:'', tip:'', options: []});
+    };
+
+    $scope.refresh = function(data) {
+        console.log(data);
+        this.content="";
+        this.question="";
+        this.tip="";
     };
 
     $scope.tree = [{question: '', tip: '', options: []}];

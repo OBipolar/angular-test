@@ -58,26 +58,26 @@ app.config(function ($routeProvider) {
       });
   });
 
-app.run(['$rootScope', '$location', function($rootScope, $location){
-    $rootScope.$on('$locationChangeStart', function(locationScope, toUrl, fromUrl) {
-      console.log('locationChangeStart');
-      console.log('from: ' + fromUrl + ', to: ' + toUrl);
-    });
+// app.run(['$rootScope', '$location', function($rootScope, $location){
+//     $rootScope.$on('$locationChangeStart', function(locationScope, toUrl, fromUrl) {
+//       console.log('locationChangeStart');
+//       console.log('from: ' + fromUrl + ', to: ' + toUrl);
+//     });
 
-    $rootScope.$on('$locationChangeSuccess', function(locationScope, toUrl, fromUrl) {
-      console.log('locationChangeSuccess');
-    });
+//     $rootScope.$on('$locationChangeSuccess', function(locationScope, toUrl, fromUrl) {
+//       console.log('locationChangeSuccess');
+//     });
 
-    $rootScope.$on('$routeChangeStart', function(rootScope, toRoute, fromRoute) {
-      console.log('routeChangeStart');
-      console.log('from: ' + fromRoute + ', to: ' + toRoute);
-    });
+//     $rootScope.$on('$routeChangeStart', function(rootScope, toRoute, fromRoute) {
+//       console.log('routeChangeStart');
+//       console.log('from: ' + fromRoute + ', to: ' + toRoute);
+//     });
 
-    $rootScope.$on('$routeChangeSuccess', function(rootScope, toRoute, fromRoute) {
-      console.log('routeChangeSuccess');
-    });
+//     $rootScope.$on('$routeChangeSuccess', function(rootScope, toRoute, fromRoute) {
+//       console.log('routeChangeSuccess');
+//     });
 
-    $rootScope.$on('$viewContentLoaded', function() {
-      console.log('viewContentLoaded');
-    });
-  }]);
+//     $rootScope.$on('$viewContentLoaded', function() {
+//       console.log('viewContentLoaded');
+//     });
+//   }]);

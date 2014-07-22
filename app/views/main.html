@@ -32,24 +32,27 @@
 
 <script type="text/ng-template"  id="tree_item_renderer.html">
 
-    <div class="well">
+    <div class="well" ng-init="refresh(data)">
 
-    <div class="input-group">
-        <span class="input-group-addon">Content</span>
-        <input type="text" class="form-control" ng-model="content">
+    <div>
+        <div class="input-group">
+            <span class="input-group-addon">Content</span>
+            <input type="text" class="form-control" ng-model="content" placeholder="Add your content here">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">Question</span>
+            <input type="text" class="form-control" ng-model="question" placeholder="Add your question here">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">Tip</span>
+            <input type="text" class="form-control" ng-model="tip" placeholder="Add your tip here">
+        </div>
+        <br>
     </div>
-    <br>
-    <div class="input-group">
-        <span class="input-group-addon">Question</span>
-        <input type="text" class="form-control" ng-model="question">
-    </div>
-    <br>
-    <div class="input-group">
-        <span class="input-group-addon">Tip</span>
-        <input type="text" class="form-control" ng-model="tip">
-    </div>
-    <br>
 
+    <button ng-click="save(data)">Save</button>
     <button ng-click="add(data)">Add Option</button>
     <button ng-click="delete(data)" ng-show="data.options.length > 0">Delete Options</button>
 

@@ -10,7 +10,7 @@ directives.directive('loadbar', ['$rootScope',
 
       $rootScope.$on('$routeChangeStart', function() {
         element.removeClass('hide');
-        console.log('show the laod bar');
+        console.log('show the load bar');
       });
 
       $rootScope.$on('$routeChangeSuccess', function() {
@@ -19,3 +19,4 @@ directives.directive('loadbar', ['$rootScope',
     }
   };
 }]);
+
