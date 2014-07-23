@@ -17,10 +17,10 @@
 * ngAnimate
 * multi-step form using ui-router, see https://github.com/OBipolar/angular-multiStepForm
 * angular-nvd3 charts (with unix timestamp conversion)
+* User Authentication (see repo angular-multiStepForm) using PassportJS
 
 ### ToDo
 * Live Preview of PDF(selection, goto function, scroll, full screen etc...)
-* User Authentication (further, need PHP/Server)
 
 ### ToLearn
 * PHP
